@@ -1,7 +1,5 @@
 FROM python:3
 
-WORKDIR /django-todo
-
 RUN pip3 install django==3.2
 
 COPY . .
