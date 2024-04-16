@@ -1,6 +1,6 @@
-FROM python:3
+FROM python:3-alpine
 
-RUN pip3 install django==3.2
+RUN pip3 install Django==5.0.4
 
 COPY . .
 
