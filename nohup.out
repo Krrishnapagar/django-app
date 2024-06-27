@@ -151,3 +151,12 @@ todos.Todo: (models.W042) Auto-created primary key used when not defining a prim
 	HINT: Configure the DEFAULT_AUTO_FIELD setting or the TodosConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
 
 System check identified 1 issue (0 silenced).
+Watching for file changes with StatReloader
+[27/Jun/2024 10:40:22] code 400, message Bad request syntax ('ÿôÿý\x06ÿôÿý\x06ÿôÿý\x06ÿôÿý\x06ÿôÿý\x06ÿôÿý\x06ÿôÿý\x06ÿôÿý\x06')
+[27/Jun/2024 10:40:22] "ÿôÿýÿôÿýÿôÿýÿôÿýÿôÿýÿôÿýÿôÿýÿôÿý" 400 -
+[27/Jun/2024 10:40:22] "GET / HTTP/1.1" 302 0
+[27/Jun/2024 10:40:22] "GET /todos HTTP/1.1" 301 0
+[27/Jun/2024 10:40:23] "GET /todos/ HTTP/1.1" 200 4095
+[27/Jun/2024 10:40:23] "GET /static/css/style.css HTTP/1.1" 200 225
+Not Found: /favicon.ico
+[27/Jun/2024 10:40:24] "GET /favicon.ico HTTP/1.1" 404 2437

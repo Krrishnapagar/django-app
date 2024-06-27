@@ -1,9 +1,6 @@
-FROM python:3-alpine
-
-RUN pip3 install Django==5.0.4
-
-COPY . .
-
+FROM python:3
+WORKDIR /django-app
+RUN pip3 install django
+COPY . . 
 RUN python3 manage.py migrate
-
-CMD ["python3", "manage.py", "runserver", "0.0.0.0:8005"]
+CMD ["python3", "manage.py", "runserver", "0.0.0.0:8003"]
