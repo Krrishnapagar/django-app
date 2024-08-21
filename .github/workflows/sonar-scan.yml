@@ -25,7 +25,7 @@ jobs:
 
     - name: Run tests with coverage
       run: |
-        coverage run -m todoApp/
+        python -m coverage run manage.py
         coverage report
         coverage html
       continue-on-error: true
